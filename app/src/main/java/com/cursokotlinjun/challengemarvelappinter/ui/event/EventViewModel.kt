@@ -57,51 +57,6 @@ class EventViewModel @Inject constructor(
 
 
 
-//    private fun getEvents(){
-//            _eventsStatus.value = EventsStatus(isLoading = true)
-//        viewModelScope.launch(Dispatchers.Main){
-//            withContext(Dispatchers.IO){
-//                eventRepository.getAllEvents()
-//            }.run {
-//                when(status){
-//                    Ressource.Status.SUCCESS -> {
-//                        _eventsStatus.value = EventsStatus(isSuccess = this.data?: emptyList())
-//                    }
-//                    Ressource.Status.ERROR -> {
-//                        _eventsStatus.value = EventsStatus(isError = true)
-//                    }
-//                    Ressource.Status.LOADING -> {
-//                        _eventsStatus.value = EventsStatus(isLoading = true)
-//                    }
-//                }
-//            }
-//        }
-//    }
-
-//    fun getComics(event: EventDato){
-//            viewModelScope.launch(Dispatchers.Main){
-//                withContext(Dispatchers.IO){
-//                    eventRepository.getAllComicsEvents(event.id)
-//                }.run {
-//                    _eventComicsStatus.value = EventComicsStatus(isExpanded = true)
-//                    when(status){
-//                        Ressource.Status.LOADING -> {
-//                            _eventComicsStatus.value = EventComicsStatus(isLoading = true)
-//                        }
-//
-//                        Ressource.Status.SUCCESS -> {
-//                            _eventComicsStatus.value = EventComicsStatus(isSuccess = this.data?: emptyList())
-//                        }
-//                        Ressource.Status.ERROR -> {
-//                            _eventComicsStatus.value = EventComicsStatus(isError = true)
-//
-//                        }
-//
-//                }
-//
-//            }
-//        }
-//    }
 
 
     fun getComics(event: EventDato) {

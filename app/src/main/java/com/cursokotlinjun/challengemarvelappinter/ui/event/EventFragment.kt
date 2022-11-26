@@ -25,8 +25,6 @@ class EventFragment : Fragment(), EventAdapter.ComicInformations {
 
     private var _binding: FragmentEventBinding? = null
     private val binding get() = _binding!!
-//    private var _bindingTwo: EventsComicsBinding? = null
-//    private val bindingTwo get() = _bindingTwo !!
     private val viewModel: EventViewModel by viewModels()
     private lateinit var eventAdapter : EventAdapter
     private val comicsAdapter = ComicsEventsAdapter()
@@ -47,8 +45,7 @@ class EventFragment : Fragment(), EventAdapter.ComicInformations {
         }
 
         setEventObservers()
-//        setupEventList()
-//        eventComicsObserver()
+
 
         return binding.root
 
