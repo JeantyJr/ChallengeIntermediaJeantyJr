@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1063907286913",
+    "project_id": "challengemarvelappinter",
+    "storage_bucket": "challengemarvelappinter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063907286913:android:2dd9b2c871841765541280",
+        "android_client_info": {
+          "package_name": "com.cursokotlinjun.challengemarvelappinter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063907286913-c1kc649uagpm4qv1e4hl94b7mf390hve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK6ztIGztQgrbDO1wPfrC7fJ8OqycRFbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063907286913-c1kc649uagpm4qv1e4hl94b7mf390hve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

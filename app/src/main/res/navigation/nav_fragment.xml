@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragment"
+    app:startDestination="@id/nav_characters">
+
+
+
+    <fragment
+        android:id="@+id/nav_characters"
+        android:name="com.cursokotlinjun.challengemarvelappinter.ui.character.CharactersFragment"
+        android:label="Marvel"
+        tools:layout="@layout/fragment_characters">
+        <action
+            android:id="@+id/goToCharacterInformations"
+            app:destination="@+id/nav_characters_info"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.cursokotlinjun.challengemarvelappinter.ui.event.EventFragment"
+        tools:layout="@layout/fragment_event" />
+
+
+    <fragment
+       android:id="@+id/nav_characters_info"
+        android:name="com.cursokotlinjun.challengemarvelappinter.ui.character.CharactersInformationFragment"
+        android:label="fragment_characters_information"
+        tools:layout="@layout/fragment_characters_information">
+        <argument
+            android:name="characterArgs"
+            app:argType="com.cursokotlinjun.challengemarvelappinter.domain.model.Character" />
+
+    </fragment>
+
+</navigation>
